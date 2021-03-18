@@ -8,9 +8,13 @@ public class Menu {
     public static void init() {
         Scanner scanner = new Scanner(System.in);
         String ret;
-        boolean error = false;
+        boolean encore = true;
         do {
-            System.out.println("Choisissez un exo (1 ou 2)");
+            System.out.println("==============================================");
+            System.out.println("|| Choisissez un exo (1 ou 2) 0 pour quitter ||");
+            System.out.println("|| 1: les triangles");
+            System.out.println("|| 2: les voyelles");
+            System.out.println("|| 0: quitter");
             ret = scanner.nextLine();
             switch (ret) {
                 case "1":
@@ -23,14 +27,14 @@ public class Menu {
                     System.out.println("===========================================");
                     System.out.println("|            Merci et à bientôt           |");
                     System.out.println("===========================================");
+                    encore= false;
                     break;
                 default:
                     System.out.println("entrez une valeur correct");
-                    error=true;
                     break;
 
             }
-        } while (error);
+        } while (encore);
 
 
     }
