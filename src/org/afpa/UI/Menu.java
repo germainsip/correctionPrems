@@ -12,9 +12,11 @@ public class Menu {
         do {
             System.out.println("==============================================");
             System.out.println("|| Choisissez un exo (1 ou 2) 0 pour quitter ||");
-            System.out.println("|| 1: les triangles");
-            System.out.println("|| 2: les voyelles");
-            System.out.println("|| 0: quitter");
+            System.out.println("|| 1: les triangles                          ||");
+            System.out.println("|| 2: les voyelles                           ||");
+            System.out.println("|| 0: quitter                                ||");
+            System.out.println("==============================================");
+
             ret = scanner.nextLine();
             switch (ret) {
                 case "1":
